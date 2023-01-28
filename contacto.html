@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto-Teatro</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img class="imagen1" src="imagenes/mask.png" alt="logo"></h1>
+
+                <nav>
+                    <ul>
+                        <li> <a href="index.html"> Home</a></li>
+                        <li><a href="productos.html"> Obras </a></li>
+                        <li><a href=" contacto.html"> Contacto </a></li>
+                    </ul>    
+                </nav>
+            </div>
+        </header>   
+
+        <main>
+            
+            <form action="">
+                <label for="nombreapellido">Nombre y Apellido: </label>
+                <input type="text" id="nombreapellido" class="input-padron" required placeholder="Nombre y Apellido ">
+
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">telefono </label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(xx)xxxxxxx">
+
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10"></textarea>
+
+                <fieldset>
+                        <legend>¿Como le gustaria  que lo Contactemos?</legend>
+
+                    <label for="radio-email"><input name="contacto" type="radio" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input name="contacto" type="radio" value="email" id="radio-telefono">
+                        Telefono</label>
+                    
+                    <label for="radio-Email"><input name="contacto" type="radio" value="email" id="radio-watsapp" checked>
+                        Whatsapp</label>
+
+                </fieldset>
+
+
+
+                <fieldset>
+
+                    <legend>¿En cual Horario  prefiere se atendido?</legend>
+                    <select >
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+
+                    </select>
+
+                </fieldset>
+
+
+                <label for=""><input class="checkbox" type="checkbox" name="" id="" checked>Le gustaria recibir novedades del Grupo  de Teatro?</label>
+
+                <input type="submit" value="Enviar Formulario" class="enviar">
+
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h - 20h</td>
+                </tr>                <tr>
+                    <td>Miercoles</td>
+                    <td>08h - 20h</td>
+                </tr>                <tr>
+                    <td>Viernes</td>
+                    <td>08h - 20h</td>
+                </tr>
+            </table>
+
+        </main>
+
+        <footer>
+            <img src="imagenes/amigos.png" alt="logo">
+            <p class="Copyright">&copy Copyright Grupo Impacto - 2023</p>
+        </footer>
